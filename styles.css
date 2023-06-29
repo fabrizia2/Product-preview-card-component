@@ -1,4 +1,6 @@
 /* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 
 /* Reset default margin and padding for all elements */
 * {
@@ -15,7 +17,7 @@
   
   /* Set basic styles for the body */
   body {
-    font-family: 'Bacasime Antique', serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #f2f2f2;
   }
   
