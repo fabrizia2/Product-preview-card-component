@@ -68,6 +68,7 @@
     font-weight: 400;
     margin-bottom: 10px;
     text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
   }
   
   /* Set styles for the title name */
@@ -76,6 +77,7 @@
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
+    font-family: "Fraunces", serif;
   }
   
   /* Set styles for the description */
@@ -92,6 +94,7 @@
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 10px;
+    font-family: "Fraunces", serif;
   }
   
   /* Set styles for the last price */
@@ -100,6 +103,7 @@
     font-size: 14px;
     text-decoration: line-through;
     margin-left: 5px;
+    font-family: "Montserrat", sans-serif;
   }
   
   /* Set styles for the button */
@@ -115,10 +119,34 @@
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
+    font-family: "Montserrat", sans-serif;
   }
   
   /* Set styles for the button on hover */
   .btn:hover {
-    background-color: #555555;
+    background-color: hsl(212, 21%, 14%);
   }
+
+  @media only screen and (max-width: 600px) {
+    .card {
+        width: 23rem;
+        height: 40rem;
+    }
+    .left-side {
+        height: 40%;
+        width: 100%;
+    }
+    .left-side-img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .right-side {
+        top: 40%;
+        height: 60%;
+        left: 0;
+    }
+    .title-name {
+        width: 100%;
+    }
+}
   
