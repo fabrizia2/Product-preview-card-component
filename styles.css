@@ -41,8 +41,8 @@
   .left-side {
     flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;
+    justify-content: center;*/
   }
   
   /* Set styles for the left side image */
@@ -84,8 +84,8 @@
   
   /* Set styles for the price */
   .price {
-    color: #333333;
-    font-size: 20px;
+    color: #048f71;
+    font-size: 25px;
     font-weight: 700;
     margin-bottom: 10px;
   }
@@ -102,7 +102,7 @@
   .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333333;
+    background-color: #058368;
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
