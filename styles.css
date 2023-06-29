@@ -1,111 +1,119 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+/* styles.css */
+
+/* Reset default margin and padding for all elements */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+  }
+  
+  /* Set box-sizing property for all elements */
+  *,
+  *::before,
+  *::after {
     box-sizing: border-box;
-    font-size: 14px;
-}
-.main {
-    background-color: hsl(30, 38%, 92%);
-    height: 100vh;
+  }
+  
+  /* Set basic styles for the body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  /* Set styles for the main container */
+  .main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.card {
-    width: 40rem;
-    height: 30rem;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 0.75rem;
-    overflow: hidden;
-    position: relative;
-}
-.left-side {
-    height: 100%;
-    width: 50%;
-    object-fit: cover;
-}
-.left-side-img {
-    height: 100%;
-}
-.right-side {
-    height: 100%;
-    top: 0;
-    left: 50%;
-    position: absolute;
+    height: 100vh;
+  }
+  
+  /* Set styles for the card section */
+  .card {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 2rem;
-}
-.title {
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.25rem;
-    font-size: 0.8rem;
-    padding-right: 0;
-    color: hsl(228, 12%, 48%);
-    text-transform: uppercase;
-    font-weight: 500;
-}
-.title-name {
-    font-family: "Fraunces", serif;
-    font-size: 2rem;
-    text-transform: capitalize;
-    width: 13rem;
-}
-.description {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: hsl(228, 12%, 48%);
-}
-.price {
-    font-family: "Fraunces", serif;
-    font-size: 2.3rem;
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Set styles for the left side of the card */
+  .left-side {
+    flex: 1;
     display: flex;
     align-items: center;
-    color: hsl(158, 36%, 37%);
-}
-.last-price {
-    font-family: "Montserrat", sans-serif;
-    text-decoration: line-through;
-    padding: 1rem;
-    color: hsl(228, 12%, 48%);
-}
-.btn {
-    padding: 0.75rem 2rem;
-    border: none;
-    background-color: hsl(158, 36%, 37%);
-    border-radius: 0.5rem;
-    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+  }
+  
+  /* Set styles for the left side image */
+  .left-side-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Set styles for the right side of the card */
+  .right-side {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Set styles for the title */
+  .title {
+    color: #888888;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  /* Set styles for the title name */
+  .title-name {
+    color: #333333;
+    font-size: 24px;
     font-weight: 700;
-    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+  }
+  
+  /* Set styles for the description */
+  .description {
+    color: #888888;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Set styles for the price */
+  .price {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  /* Set styles for the last price */
+  .last-price {
+    color: #888888;
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-left: 5px;
+  }
+  
+  /* Set styles for the button */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-}
-.btn:hover {
-    background-color: hsl(212, 21%, 14%);
-}
-
-@media only screen and (max-width: 600px) {
-    .card {
-        width: 23rem;
-        height: 40rem;
-    }
-    .left-side {
-        height: 40%;
-        width: 100%;
-    }
-    .left-side-img {
-        width: 100%;
-        object-fit: cover;
-    }
-    .right-side {
-        top: 40%;
-        height: 60%;
-        left: 0;
-    }
-    .title-name {
-        width: 100%;
-    }
-}
+  }
+  
+  /* Set styles for the button on hover */
+  .btn:hover {
+    background-color: #555555;
+  }
+  
