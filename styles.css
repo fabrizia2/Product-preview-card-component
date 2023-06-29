@@ -112,6 +112,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
   }
   
   /* Set styles for the button on hover */
