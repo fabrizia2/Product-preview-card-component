@@ -62,8 +62,8 @@
   /* Set styles for the title */
   .title {
     color: #888888;
-    font-size: 20px;
-    font-weight: 450;
+    font-size: 14px;
+    font-weight: 400;
     margin-bottom: 10px;
     text-transform: uppercase;
   }
@@ -71,7 +71,7 @@
   /* Set styles for the title name */
   .title-name {
     color: #333333;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
   }
